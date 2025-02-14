@@ -1,8 +1,10 @@
+
 import java.util.Scanner;
 
-
 class App {
+
     static boolean start = true;
+
     public static void main(String[] Args) {
         Pilihan(start);
     }
@@ -14,22 +16,22 @@ class App {
             System.out.println("2. Segitiga");
             System.out.print("Pilihan : ");
             int pilihan = input.nextInt();
-            
+
             if (pilihan == 1) {
-                System.out.println("1. Hitung Luas Persegi");
-                System.out.println("2. Hitung Keliling Persegi");
-                System.out.println("3. Hitung Panjang Sisi Persegi");
+
+            }
+            if (pilihan == 2) {
+                System.out.print("Masukan Lebar Segitiga: ");
+                int alas = input.nextInt();
+                System.out.print("Masukan Lebar Tinggi: ");
+                int tinggi = input.nextInt();
+                new Segitiga(alas, tinggi);
 
             }
             if (pilihan == 1) {
-                
-
-            }
-            if (pilihan == 1) {
-                
 
             }
         }
     }
-    
+
 }
