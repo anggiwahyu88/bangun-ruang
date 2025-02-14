@@ -15,6 +15,7 @@ class App {
             System.out.println("1. Persegi");
             System.out.println("2. Segitiga Sama Sisi");
             System.out.println("3. Lingkaran");
+            System.out.println("4. Trapesium");
             System.out.print("Pilihan : ");
             int pilihan = input.nextInt();
             if (pilihan == 0) {
