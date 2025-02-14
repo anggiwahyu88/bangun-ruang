@@ -3,20 +3,24 @@ import java.util.Scanner;
 
 class App {
 
-    static boolean start = true;
-
     public static void main(String[] Args) {
-        Pilihan(start);
+        Pilihan();
     }
 
-    private static void Pilihan(boolean Start) {
+    private static void Pilihan() {
+        boolean Start = true;
         Scanner input = new Scanner(System.in);
         while (Start) {
+            System.out.println("0. Keluar");
             System.out.println("1. Persegi");
-            System.out.println("2. Segitiga");
+            System.out.println("2. Segitiga Sama Sisi");
+            System.out.println("3. Lingkaran");
             System.out.print("Pilihan : ");
             int pilihan = input.nextInt();
-
+            if (pilihan == 0) {
+                Start = false;
+                input.close();
+            }
             if (pilihan == 1) {
                 System.out.print("Masukkan Panjang Sisi Persegi : ");
                 int sisi = input.nextInt();
@@ -24,15 +28,20 @@ class App {
 
             }
             if (pilihan == 2) {
-                System.out.print("Masukkan Lebar Segitiga: ");
+                System.out.print("Masukkan Alas Segitiga: ");
                 int alas = input.nextInt();
-                System.out.print("Masukkan Lebar Tinggi: ");
+                System.out.print("Masukkan Tinggi Segitiga: ");
                 int tinggi = input.nextInt();
-                new Segitiga(alas, tinggi);
-
+                var segitiga = new Segitiga(alas, tinggi);
+                segitiga.luas();
+                segitiga.keliling();
             }
-            if (pilihan == 1) {
-
+            if (pilihan == 3) {
+                System.out.print("Masukkan Diameter Lingkaran: ");
+                int diameter = input.nextInt();
+                var lingkaran = new Lingkaran(diameter);
+                lingkaran.keliling();
+                lingkaran.luas();
             }
         }
     }

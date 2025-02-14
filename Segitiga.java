@@ -4,15 +4,20 @@ class Segitiga {
     int alas;
     int tinggi;
 
-    private int luas() {
-        int luas = this.alas * this.tinggi;
-        return luas / 2;
+    public void luas() {
+        int luas = this.alas * this.tinggi / 2;
+        System.out.println("Luas segitiga:" + luas);
+    }
+
+    public void keliling() {
+        double miring = Math.sqrt((this.alas * this.alas) + (this.tinggi * this.tinggi));
+        double keliling = miring * 2 + this.alas;
+        System.out.println("keliling segitiga:" + keliling);
     }
 
     public Segitiga(int alasParam, int tinggiParam) {
         this.alas = alasParam;
         this.tinggi = tinggiParam;
-        System.out.print("Luas segitiga:" + this.luas());
     }
 
 ;
