@@ -13,7 +13,7 @@ class App {
         while (Start) {
             System.out.println("0. Keluar");
             System.out.println("1. Persegi");
-            System.out.println("2. Segitiga Sama Sisi");
+            System.out.println("2. Segitiga Siku-Siku");
             System.out.println("3. Lingkaran");
             System.out.println("4. Trapesium");
             System.out.print("Pilihan : ");

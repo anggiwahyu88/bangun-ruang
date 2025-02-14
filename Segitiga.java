@@ -10,7 +10,7 @@ class Segitiga {
     }
 
     public void keliling() {
-        double miring = Math.sqrt((this.alas * this.alas) + (this.tinggi * this.tinggi));
+        double miring = Math.sqrt(((this.alas/2) * (this.alas/2)) + (this.tinggi * this.tinggi));
         double keliling = miring * 2 + this.alas;
         System.out.println("keliling segitiga:" + keliling);
     }
