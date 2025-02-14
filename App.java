@@ -43,6 +43,16 @@ class App {
                 lingkaran.keliling();
                 lingkaran.luas();
             }
+            if (pilihan == 4) {
+                System.out.print("Masukkan Panjang Sisi Atas Trapesium");
+                int sisi_atas = input.nextInt();
+                System.out.print("Masukkan Panjang Sisi Bawah Trapesium");
+                int sisi_bawah = input.nextInt();
+                System.out.print("Masukkan Panjang Sisi Tinggi Trapesium");
+                int tinggi = input.nextInt();
+                Trapesium.Output(sisi_atas, sisi_bawah, tinggi, Trapesium.Luas(sisi_atas, sisi_bawah, tinggi));
+
+            }
         }
     }
 
