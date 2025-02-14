@@ -18,12 +18,15 @@ class App {
             int pilihan = input.nextInt();
 
             if (pilihan == 1) {
+                System.out.print("Masukkan Panjang Sisi Persegi : ");
+                int sisi = input.nextInt();
+                Persegi.Output(sisi, Persegi.Keliling(sisi));
 
             }
             if (pilihan == 2) {
-                System.out.print("Masukan Lebar Segitiga: ");
+                System.out.print("Masukkan Lebar Segitiga: ");
                 int alas = input.nextInt();
-                System.out.print("Masukan Lebar Tinggi: ");
+                System.out.print("Masukkan Lebar Tinggi: ");
                 int tinggi = input.nextInt();
                 new Segitiga(alas, tinggi);
 
